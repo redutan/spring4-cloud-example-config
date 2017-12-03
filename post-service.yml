@@ -1,6 +1,8 @@
 server.port: ${PORT:8000}
 message: Hello PostService!!!
 
+management.security.enabled: false
+
 # define the destination to which the input MessageChannel should be bound
 spring.cloud.stream.bindings.input.destination: posts
 
